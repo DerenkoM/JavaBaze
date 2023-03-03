@@ -1,7 +1,5 @@
 package ru.autotesting.base;
 
-import java.util.Scanner;
-
 public class MainPerson {
     public static void main(String[] args) {
         /* Scanner scanner = new Scanner(System.in);
@@ -22,6 +20,9 @@ public class MainPerson {
         //изменение имени
         // person.setName("Василий");
         // System.out.println("2 имя " + person.getName());
+
+
+        // System.out.println(nowYear);
 
         Person person1 = new Person("Иванов", "Иван", "Иванович", 35);
         Person person2 = new Person("Петров", "Петр", "Петрович", 15);

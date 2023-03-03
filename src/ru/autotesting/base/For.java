@@ -6,17 +6,15 @@ public class For {
         int x, y, a, count = 0, i;
         x = 1;
         y = 100;
-        a = 4;
-        System.out.println("Числа кратные " + a + " в диапазоне от " + y + " до " + x + " :");
+        System.out.println("Числа кратные 4 в диапазоне от " + y + " до " + x + " :");
         for (i = y; i >= x; i--) {
-            fun(i, a);
+            fun(i);
         }
     }
 
-    public static void fun(int i, int a) {
-
-        if ((i % a) == 0) {
-            System.out.print(i + " / ");
+    public static void fun(int a) {
+        if ((a % 4) == 0) {
+            System.out.print(a + " / ");
         }
     }
 }
