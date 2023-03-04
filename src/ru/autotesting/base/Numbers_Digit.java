@@ -7,26 +7,26 @@ public class Numbers_Digit {
         System.out.println("Введите целое число:");
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
-        //int b = a;
-        int summa = 0;
-        int summa1 = 0;
-        int max = 0;
+        int summaDigits = 0;
+        int summaNotEvenDigits = 0;
+        int maxDigit = 0;
+        int module = Math.abs(a);
 
-        while (Math.abs(a) != 0) {
-            summa += (Math.abs(a) % 10);
+        while (module != 0) {
+            summaDigits += (module % 10);
 
-            int max1 = (Math.abs(a) % 10);
-            if (max1 > max) {
-                max = max1;
+            int maxDigit1 = (module % 10);
+            if (maxDigit1 > maxDigit) {
+                maxDigit = maxDigit1;
             }
 
-            if ((Math.abs(a) % 2) == 1) {
-                summa1 += (Math.abs(a) % 10);
+            if ((module % 2) == 1) {
+                summaNotEvenDigits += (module % 10);
             }
-            a /= 10;
+            module /= 10;
         }
-        System.out.println("Сумма цифр Вашего числа равна " + summa);
-        System.out.println("Максимальная цифра в Вашем числе: " + max);
-        System.out.println("Сумма нечетных цифр Вашего числа равна " + summa1);//
+        System.out.println("Сумма цифр Вашего числа равна " + summaDigits);
+        System.out.println("Максимальная цифра в Вашем числе: " + maxDigit);
+        System.out.println("Сумма нечетных цифр Вашего числа равна " + summaNotEvenDigits);
     }
 }
