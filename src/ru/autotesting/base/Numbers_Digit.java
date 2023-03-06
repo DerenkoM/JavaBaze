@@ -6,24 +6,23 @@ public class Numbers_Digit {
     public static void main(String[] args) {
         System.out.println("Введите целое число:");
         Scanner scanner = new Scanner(System.in);
-        int a = scanner.nextInt();
+        int digit = Math.abs(scanner.nextInt());
         int summaDigits = 0;
         int summaNotEvenDigits = 0;
         int maxDigit = 0;
-        int module = Math.abs(a);
 
-        while (module != 0) {
-            summaDigits += (module % 10);
+        while (digit != 0) {
+            summaDigits += (digit % 10);
 
-            int maxDigit1 = (module % 10);
+            int maxDigit1 = (digit % 10);
             if (maxDigit1 > maxDigit) {
                 maxDigit = maxDigit1;
             }
 
-            if ((module % 2) == 1) {
-                summaNotEvenDigits += (module % 10);
+            if ((digit % 2) == 1) {
+                summaNotEvenDigits += (digit % 10);
             }
-            module /= 10;
+            digit /= 10;
         }
         System.out.println("Сумма цифр Вашего числа равна " + summaDigits);
         System.out.println("Максимальная цифра в Вашем числе: " + maxDigit);
