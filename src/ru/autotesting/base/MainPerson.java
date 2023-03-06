@@ -2,28 +2,7 @@ package ru.autotesting.base;
 
 public class MainPerson {
     public static void main(String[] args) {
-        /* Scanner scanner = new Scanner(System.in);
-
-         System.out.print("Введите фамилию: ");
-        String familyName = scanner.nextLine();
-
-        System.out.print("Введите имя: ");
-        String name = scanner.nextLine();
-
-        System.out.print("Введите отчество: ");
-        String middleName = scanner.nextLine(); */
-
-        // Person person = new Person(familyName, name, middleName);
-
-        // System.out.println("1 имя " + person.getName());
-
-        //изменение имени
-        // person.setName("Василий");
-        // System.out.println("2 имя " + person.getName());
-
-
-        // System.out.println(nowYear);
-
+ 
         Person person1 = new Person("Иванов", "Иван", "Иванович", 35);
         Person person2 = new Person("Петров", "Петр", "Петрович", 15);
         Person person3 = new Person("Сидоров", "Сидор", "Сидорович", 71);
